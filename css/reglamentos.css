@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;     
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo img {
+  display: block;
+}
+
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+header {
+  background-color: #003366;
+  padding: 10px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+
+.submenu {
+  position: relative;
+}
+
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  min-width: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+}
+
+.dropdown li a:hover {
+  background-color: #3e556e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+
+h1 {
+  font-size: 32px;
+  color: #800020; 
+  margin-top: 50px;
+  border-left: 6px solid #001f3f; 
+  padding-left: 15px;
+  background: #fce8ed;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #001f3f;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
+  margin: 10px 0 25px;
+  font-size: 17px;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-left: 4px solid #800020;
+  border-radius: 6px;
+}
+
+p:nth-of-type(2) {
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+body{
+  background-color: #800020;
+}

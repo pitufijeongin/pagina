@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/eventos.css">
+</head>
+<body>
+    
+       
+      <header>
+    <div class="container nav-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html"><img src="https://tse2.mm.bing.net/th/id/OIP.rmWGd9EVUtd5fngwOR1PwwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="100" height="100" alt="escudo JAD"/></a></li>
+          <li><a href="./pages/colegio.html">Colegio</a></li>
+          <li><a href="./pages/reglamento.html">Reglamento</a></li>
+          <li><a href="./pages/eventos.html">Eventos</a></li>
+          <li><a href="./pages/especialidades.html">Especialidades</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+  
+  <header class="header">
+    <h1>Eventos</h1>
+  </header>
+
+  <main class="comunicados-container">
+
+    <section class="comunicado">
+      <img src="../img/Imagen de WhatsApp 2025-07-27 a las 00.14.44_08c23804.jpg" alt="Imagen comunicado 1">
+      <div class="comunicado-info">
+        <h2>Taller de Arte</h2>
+        <p class="fecha">24 de julio de 2025</p>
+        <p>Desata tu creatividad a través de estos talleres, sé tu misma, ¡nosotros te ayudamos a crecer!</p>
+      </div>
+    </section>
+
+    <section class="comunicado">
+      <img src="../img/Imagen de WhatsApp 2025-07-27 a las 00.14.44_95897808.jpg" alt="Imagen comunicado 2">
+      <div class="comunicado-info">
+        <h2>Desfile</h2>
+        <p class="fecha">13 de julio de 2025</p>
+        <p>Ven y apoya a la escolta de la institución, solo este 20 de Julio, ¡¡¡te esperamos!!!</p>
+      </div>
+    </section>
+
+    <section class="comunicado">
+      <img src="../img/Imagen de WhatsApp 2025-07-27 a las 00.14.45_be5f5c85.jpg" alt="Imagen comunicado 3">
+      <div class="comunicado-info">
+        <h2>Examenes</h2>
+        <p class="fecha">10 de julio de 2025</p>
+        <p>Mira quiénes representarán al colegio en examenes con distintas instituciones educativas y no te lo pierdas.</p>
+      </div>
+    </section>
+
+  </main>
+    <script>
+    let slides = document.querySelectorAll('.carousel-slide');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[i].classList.add('active');
+    }
+
+    document.querySelector('.next').onclick = () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    };
+
+    document.querySelector('.prev').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    };
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 5000);
+  </script>
+</body>
+</html>

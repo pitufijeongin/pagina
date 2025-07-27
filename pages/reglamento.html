@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reglamentos.css">
+</head>
+<body>
+    
+      <header>
+    <div class="container nav-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html"><img src="https://tse2.mm.bing.net/th/id/OIP.rmWGd9EVUtd5fngwOR1PwwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="100" height="100" alt="escudo JAD"/></a></li>
+          <li><a href="./pages/colegio.html">Colegio</a></li>
+          <li><a href="./pages/reglamento.html">Reglamento</a></li>
+          <li><a href="./pages/eventos.html">Eventos</a></li>
+          <li><a href="./pages/especialidades.html">Especialidades</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>  
+    <h1>ARTÍCULO 1</h1>
+
+<h2>Definición de convivencia escolar </h2>
+
+<p>Para la generación de un clima adecuado para el logro de los aprendizajes de las estudiantes y conforme a las necesidades y características de la IE, la convivencia escolar se define como:
+
+
+a.- Un conjunto de pautas, directrices de comportamientos basadas en el respeto entre todos los miembros de la comunidad educativa buscando promover el buen trato. Asimismo, las normas de convivencia de la Institución Educativa están dentro del marco legal vigente.
+
+
+b.- Las normas de convivencia son aquellas pautas de conducta necesarias para lograr una convivencia democrática y armónica entre los integrantes de la comunidad educativa basada en el respeto, manteniendo un enfoque formativo. Con el fin de promover autonomía y desarrollo personal.
+
+
+c.- Las dificultades que surgen en las interacciones entre los miembros de la comunidad educativa han de ser abordadas formativamente, contemplando en cada ocurrencia inadecuada una oportunidad de aprendizaje y crecimiento.
+
+
+Esto es posible, usando estrategias de reflexión, resolución de conflictos y prácticas restaurativas, de modo que, permita a los involucrados asumir responsabilidades individuales por los comportamientos inadecuados y reparar el daño causado para recomponer los vínculos interpersonales y mejorar así la convivencia. Por ello, los conflictos han de ser resueltos en forma asertiva a través del diálogo. Son valores, actitudes, habilidades y comportamientos esperados por la comunidad educativa.</p>
+
+
+
+    <h1>ARTÍCULO 2</h1>
+<h2>Normas de convivencia</h2>
+
+<p>1. Nos tratamos con respeto y asertividad en todo momento, sin hacer distinciones, especialmente cuando tenemos diferencias de ideas o creencias.
+
+
+    2. Ponemos en práctica la puntualidad y responsabilidad en el cumplimiento de nuestras, deberes, funciones y actividades.
+    
+
+    3. Practicamos valores especialmente la solidaridad, empatía y resiliencia, para convivir en armonia.
+    
+
+    4. Somos responsables en el uso de los recursos y herramientas tecnológicas en el proceso aprendizaje.
+    
+
+    5. Practicamos la proactividad teniendo en cuenta la investigación, creatividad e innovación en la búsqueda de la excelencia.
+    
+
+    6. Cuidamos nuestra presentación personal, tomando en cuenta la identidad institucional. Respetando el buen uso del uniforme escolar, sin maquillaje ni complementos ajenos al uniforme.
+    
+
+    7. Cuidamos de la infraestructura, áreas verdes, áreas comunes, mobiliario, manteniendo la limpieza y ornato, dentro y fuera de la Institución Educativa.
+    
+
+    8. Evitamos el uso de celular y aparatos electrónicos, durante el desarrollo de la clase y en los diferentes espacios de la escuela. 9
+    
+
+    9. Utilizamos palabras de cortesía y el buen trato, actitudes agradables, para enriquecer nuestra convivencia armoniosa y nos lleve a un agradable aprendizaje.
+    
+    
+    10. Gestionamos conflictos de manera pacífica y asertiva, a la vez que fortalecemos el cumplimiento de estas normas con la socialización constante.</p>
+  </main>
+      <script>
+    let slides = document.querySelectorAll('.carousel-slide');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[i].classList.add('active');
+    }
+
+    document.querySelector('.next').onclick = () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    };
+
+    document.querySelector('.prev').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    };
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 5000);
+  </script>
+</body>
+</html>

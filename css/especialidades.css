@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;     
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo img {
+  display: block;
+}
+
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+header {
+  background-color: #003366;
+  padding: 10px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+
+.submenu {
+  position: relative;
+}
+
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  min-width: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+}
+
+.dropdown li a:hover {
+  background-color: #3e556e;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #800020;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-galeria {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.imagen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imagen:hover img {
+  transform: scale(1.1);
+}
+
+.imagen .texto {
+  position: absolute;
+  bottom: 0;
+  background: rgba(44, 62, 80, 0.8);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.visor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.visor img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+#cerrar {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+

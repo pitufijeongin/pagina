@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Chat Flotante</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+    <div class="contenido-pagina">
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Este es un contenido de ejemplo para demostrar el chat flotante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div id="chat-fab" class="chat-fab">
+        <img src="chat-icon.svg" alt="Abrir Chat"> </div>
+
+    <div id="chat-ventana" class="chat-ventana">
+        <div class="chat-cabecera">
+            <h2>Asistente Virtual</h2>
+            <button id="cerrar-chat" class="cerrar-chat">&times;</button>
+        </div>
+        <div id="chat-cuerpo" class="chat-cuerpo">
+            <div class="mensaje bot">
+                <p>¡Hola! ¿Cómo puedo ayudarte hoy?</p>
+            </div>
+        </div>
+        <div class="chat-pie">
+            <input type="text" id="chat-entrada" placeholder="Escribe tu mensaje...">
+            <button id="enviar-mensaje">Enviar</button>
+        </div>
+    </div>
+
+    <script src="../prueba.js"></script>
+</body>
+</html>
+
